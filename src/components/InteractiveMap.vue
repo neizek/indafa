@@ -57,6 +57,7 @@ onMounted(() => {
       <q-card-section>
         <q-card-item>Location: {{ carWashDetails.spot }}</q-card-item>
         <q-card-item>Address: {{ carWashDetails.address }}</q-card-item>
+        SUKA
       </q-card-section>
     </q-card>
   </q-dialog>
