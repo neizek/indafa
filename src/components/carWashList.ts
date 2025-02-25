@@ -8,10 +8,11 @@ export const getCarwashList: (t: ComposerTranslation) => CarwashList[] = (
     city: 'Rīga',
     carWashes: [
       {
-        id: 0,
-        address: 'Augusta Deglava iela 77 k-1',
-        spot: `${t('gs')} "KOOL"`,
-        coordinates: [24.20164504232815, 56.94765002578093],
+        id: 5,
+        address: 'Tvaika iela 3',
+        spot: `${t('gs')} "Virši"`,
+        phone: '+371 67 391 995',
+        coordinates: [24.116537742679444, 56.997830797886785],
       },
       {
         id: 1,
@@ -19,6 +20,13 @@ export const getCarwashList: (t: ComposerTranslation) => CarwashList[] = (
         spot: `${t('gs')} "Virši"`,
         coordinates: [24.173627299999996, 56.974951076362096],
       },
+      {
+        id: 0,
+        address: 'Augusta Deglava iela 77 k-1',
+        spot: `${t('gs')} "KOOL"`,
+        coordinates: [24.20164504232815, 56.94765002578093],
+      },
+
       {
         id: 2,
         address: 'Daugavgrīvas iela 136A',
@@ -36,13 +44,6 @@ export const getCarwashList: (t: ComposerTranslation) => CarwashList[] = (
         address: 'Uzvaras Bulvāris 16',
         spot: `${t('gs')} "Virši"`,
         coordinates: [24.0896458503853, 56.938409994674224],
-      },
-      {
-        id: 5,
-        address: 'Tvaika iela 3',
-        spot: `${t('gs')} "Virši"`,
-        phone: '+371 67 391 995',
-        coordinates: [24.116537742679444, 56.997830797886785],
       },
     ],
   },
