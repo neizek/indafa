@@ -37,8 +37,10 @@ useMeta(() => {
     <div class="row q-col-gutter-xl">
       <div class="col-12 col-md-7 q-col-gutter-y-lg">
         <q-intersection transition="fade" once>
-          <q-img src="../assets/mercedes.png" style="align-items: center; align-content: center">
-            <!-- <h3 class="text-right">Indafa<br />{{ $t('carWash') }}</h3> -->
+          <q-img
+            src="../assets/mercedes-min.png"
+            style="align-items: center; align-content: center"
+          >
             <span :class="`${q.screen.md ? 'text-h2' : 'text-h3'} Title`"
               >Indafa<br />{{ $t('carWash') }}</span
             >
@@ -100,5 +102,9 @@ useMeta(() => {
   top: 30%;
   right: 0;
   text-align: right;
+  background: -webkit-linear-gradient(#eee 30%, #003d37);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>

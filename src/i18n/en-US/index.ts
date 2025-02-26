@@ -1,6 +1,3 @@
-// This is just an example,
-// so you can safely delete all default props below
-
 export default {
   carWash: 'carwash',
   gs: 'G/S',
@@ -31,7 +28,7 @@ export default {
         'Otherwise, the company is not responsible for the demages that caused in washing process. If you have any complaints about the quality of service provided, please refer to the car wash worker immediately.',
     },
     disclaimer: {
-      header: 'DISCLAMER',
+      header: 'DISCLAIMER',
       first: 'The company bears no responsibility about leaved car keys to car wash workers.',
       second:
         'Car engine washing event workers employees only for the quality of their work. The company is not responsible if the water was get in unexpected places, as well as other damage that may arise washing.',

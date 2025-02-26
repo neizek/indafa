@@ -1,9 +1,7 @@
 <script setup lang="ts">
-// import { watchEffect } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-const props = defineProps(['carWashDetails'])
-console.log(props.carWashDetails)
+defineProps(['carWashDetails'])
 const { t } = useI18n()
 </script>
 <template>

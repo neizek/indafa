@@ -1,8 +1,6 @@
 <script setup lang="ts">
-// import { ref } from 'vue'
 import { ref, watch } from 'vue'
 import LogoSVG from '../assets/indafa.svg'
-// import { useQuasar } from 'quasar'
 import { useI18n } from 'vue-i18n'
 import { useQuasar } from 'quasar'
 import { useRoute, useRouter } from 'vue-router'
@@ -10,7 +8,6 @@ import { languages } from 'src/boot/i18n'
 const t = useI18n()
 const router = useRouter()
 const route = useRoute()
-// console.log(q)
 const choosenLanguage = ref(t.locale)
 
 async function changeLocale(newLocale: string) {
@@ -32,13 +29,10 @@ const $q = useQuasar()
 </script>
 
 <template>
-  <!-- <q-parallax src="../assets/carwash.jpg" style="height: 100vh"> -->
   <q-layout view="hHh lpR fff">
     <q-header class="Header">
       <q-toolbar>
-        <!-- <q-toolbar-title class="absolute q-pa-md"> -->
         <q-img :src="LogoSVG" fit="contain" height="36px" width="100px" />
-        <!-- </q-toolbar-title> -->
         <q-space></q-space>
         <q-btn-toggle
           v-model="choosenLanguage"
@@ -69,7 +63,6 @@ const $q = useQuasar()
       <span>© Indafa {{ new Date().getFullYear() }}</span>
     </q-footer>
   </q-layout>
-  <!-- </q-parallax> -->
 </template>
 
 <style lang="scss" scoped>

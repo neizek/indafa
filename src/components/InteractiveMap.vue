@@ -5,19 +5,12 @@ import { useI18n } from 'vue-i18n'
 import { getCarwashList } from './carWashList'
 import { computed } from 'vue'
 import { type CarWash } from './models'
-// import { type CarWash } from './models'
 
-// Set your Mapbox access token
 mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN
 
 const mapContainer = ref(null)
 const { t } = useI18n()
 const carWashList = computed(() => getCarwashList(t))
-// const carWashDetails: Ref<CarWash | undefined> = ref(undefined)
-// const detailsOpened: Ref<boolean> = ref(false)
-// defineProps({
-//   openDetails: (carWash: CarWash) => void
-// })
 
 import { type PropType } from 'vue'
 
