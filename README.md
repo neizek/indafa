@@ -1,40 +1,12 @@
-# Indafa (new-indafa)
+# 🚗 Indafa car wash
 
-Car Wash Indafa
+A brand new redesigned website for Indafa car wash.
 
-## Install the dependencies
-```bash
-yarn
-# or
-npm install
-```
+## 🛠️ Tech Stack
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
+**Client:** Quasar, Vue.js (Composition API), SCSS. \
+**Server:** PHP, Apache.
 
+## 🔗 Link to the website
 
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
-
-
-### Format the files
-```bash
-yarn format
-# or
-npm run format
-```
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+[Indafa Official Website](https://www.indafa.lv)
