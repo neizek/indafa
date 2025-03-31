@@ -14,9 +14,11 @@ const props = defineProps({
 })
 </script>
 <template>
-  <h4 class="q-my-xs q-my-xl-md">{{ $t('howToFindUs') }}</h4>
+  <q-intersection transition="slide-left" :transition-duration="600" once>
+    <h4 class="q-my-xs q-my-xl-md">{{ $t('howToFindUs') }}</h4>
+  </q-intersection>
   <div v-for="(cityCarWashes, index) in carWashList" :key="index" class="q-gutter-y-md">
-    <q-intersection class="text-h5" style="margin-bottom: 0" transition="flip-left" once>{{
+    <q-intersection class="text-h5" style="margin-bottom: 0" transition="slide-left" once>{{
       cityCarWashes.city
     }}</q-intersection>
     <q-intersection transition="scale" once>

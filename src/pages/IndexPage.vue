@@ -60,11 +60,7 @@ useMeta(() => {
       </div>
       <div class="col-12 col-md-5 q-col-gutter-y-lg">
         <HowToFindUs :open-details="openDetails" />
-      </div>
-    </div>
-    <div class="row q-col-gutter-xl">
-      <div class="col-12 col-md-6">
-        <q-intersection transition="slide-right" :transition-duration="600" once>
+        <q-intersection transition="slide-left" :transition-duration="600" once>
           <h5>
             {{ $t('paragraphs.importantInfo.header') }}
           </h5>
@@ -77,9 +73,7 @@ useMeta(() => {
             {{ $t('paragraphs.importantInfo.second') }}
           </p>
         </q-intersection>
-      </div>
-      <div class="col-12 col-md-6">
-        <q-intersection transition="slide-right" :transition-duration="600" once>
+        <q-intersection transition="slide-left" :transition-duration="600" once>
           <h5>{{ $t('paragraphs.disclaimer.header') }}</h5>
         </q-intersection>
         <q-intersection transition="slide-up" :transition-duration="600" once>
