@@ -57,7 +57,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div :class="`${q.screen.md ? 'sticky' : ''}`">
+  <div :class="`${q.screen.gt.md ? 'sticky' : ''}`">
     <div ref="mapContainer" class="map-container" style="border-radius: 10px"></div>
   </div>
 </template>
