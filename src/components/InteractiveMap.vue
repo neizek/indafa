@@ -9,10 +9,12 @@ import { type CarWash } from './models'
 mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN
 
 const mapContainer = ref(null)
+const q = useQuasar()
 const { t } = useI18n()
 const carWashList = computed(() => getCarwashList(t))
 
 import { type PropType } from 'vue'
+import { useQuasar } from 'quasar'
 
 const props = defineProps({
   openDetails: {
@@ -55,10 +57,17 @@ onMounted(() => {
 </script>
 
 <template>
-  <div ref="mapContainer" class="map-container" style="border-radius: 10px"></div>
+  <div :class="`${q.screen.md ? 'sticky' : ''}`">
+    <div ref="mapContainer" class="map-container" style="border-radius: 10px"></div>
+  </div>
 </template>
 
 <style lang="scss">
+.sticky {
+  position: sticky;
+  top: 60px;
+}
+
 .map-container {
   width: 100%;
   aspect-ratio: 4/3;

@@ -13,6 +13,16 @@ export default {
     keywords:
       'car wash services, clean car benefits, car cleaning safety, affordable car wash, Indafa car wash, winter car care, shiny car maintenance, professional car cleaning',
   },
+  offers: {
+    that: 'offers',
+    carwash: 'Car wash',
+    interiorCleaning: 'Interior cleaning',
+    interiorDryCleaning: 'Interior dry cleaning',
+    interiorOzonation: 'Ozonation of the interior',
+    polishing: 'Polishing headlights and bodywork',
+    ceramicCoating: 'Ceramic coating of the car body',
+    partnership: 'Discounts for corporate clients',
+  },
   paragraphs: {
     aboutUs: {
       first:

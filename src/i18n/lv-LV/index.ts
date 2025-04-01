@@ -13,6 +13,16 @@ export default {
     keywords:
       'auto mazgāšanas pakalpojumi, tīras automašīnas priekšrocības, auto tīrīšanas drošība, pieejama auto mazgāšana, Indafa auto mazgāšana, ziemas auto kopšana, profesionāla auto tīrīšana',
   },
+  offers: {
+    that: 'piedāva',
+    carwash: 'Automazgāšana',
+    interiorCleaning: 'Salona tirīšana',
+    interiorDryCleaning: 'Ķīmiskā tirīšana',
+    interiorOzonation: 'Salona ozonēšana',
+    polishing: 'Lukturu un virsbūves pulēšana',
+    ceramicCoating: 'Virbūves keramikās parklājuma uzklāšana',
+    partnership: 'Korporatīviem klientiem atlaides',
+  },
   paragraphs: {
     aboutUs: {
       first:

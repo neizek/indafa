@@ -1,11 +1,16 @@
 <script setup lang="ts">
-import { useMeta, useQuasar } from 'quasar'
+import { useMeta } from 'quasar'
+import AboutUs from 'src/components/textblocks/AboutUs.vue'
 import CarWashDetails from 'src/components/CarWashDetails.vue'
+import Disclaimer from 'src/components/textblocks/DisclaimerText.vue'
 import HowToFindUs from 'src/components/HowToFindUs.vue'
+import ImportantInfo from 'src/components/textblocks/ImportantInfo.vue'
 import InteractiveMap from 'src/components/InteractiveMap.vue'
 import { type CarWash } from 'src/components/models'
 import { computed, type Ref, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import IndafaTitleBlock from 'src/components/IndafaTitleBlock.vue'
+import OffersList from 'src/components/textblocks/OffersList.vue'
 
 const carWashDetails: Ref<CarWash | undefined> = ref(undefined)
 const detailsOpened: Ref<boolean> = ref(false)
@@ -16,7 +21,6 @@ function openDetails(carWash: CarWash) {
 }
 
 const { t } = useI18n()
-const q = useQuasar()
 const title = computed(() => t('meta.title'))
 const description = computed(() => t('meta.descripton'))
 const keywords = computed(() => t('meta.keywords'))
@@ -36,52 +40,15 @@ useMeta(() => {
   <q-page padding class="fit col q-col-gutter-y-xl">
     <div class="row q-col-gutter-xl">
       <div class="col-12 col-md-7 q-col-gutter-y-lg">
-        <q-intersection transition="fade" once>
-          <q-img
-            src="../assets/mercedes-min.png"
-            style="align-items: center; align-content: center"
-          >
-            <span :class="`${q.screen.md ? 'text-h2' : 'text-h3'} Title`"
-              >Indafa<br />{{ $t('carWash') }}</span
-            >
-          </q-img>
-        </q-intersection>
-        <q-intersection transition="jump-up" :transition-duration="600" once>
-          <p class="text-grey-13">
-            {{ $t('paragraphs.aboutUs.first') }}
-          </p>
-          <p class="text-grey-13">
-            {{ $t('paragraphs.aboutUs.second') }}
-          </p>
-        </q-intersection>
-        <div>
-          <InteractiveMap :open-details="openDetails" />
-        </div>
+        <IndafaTitleBlock />
+        <AboutUs />
+        <InteractiveMap :open-details="openDetails" />
       </div>
       <div class="col-12 col-md-5 q-col-gutter-y-lg">
         <HowToFindUs :open-details="openDetails" />
-        <q-intersection transition="slide-left" :transition-duration="600" once>
-          <h5>
-            {{ $t('paragraphs.importantInfo.header') }}
-          </h5>
-        </q-intersection>
-        <q-intersection transition="jump-up" :transition-duration="600" once>
-          <p class="text-grey-13">
-            {{ $t('paragraphs.importantInfo.first') }}
-          </p>
-          <p class="text-grey-13">
-            {{ $t('paragraphs.importantInfo.second') }}
-          </p>
-        </q-intersection>
-        <q-intersection transition="slide-left" :transition-duration="600" once>
-          <h5>{{ $t('paragraphs.disclaimer.header') }}</h5>
-        </q-intersection>
-        <q-intersection transition="slide-up" :transition-duration="600" once>
-          <p class="text-grey-13">{{ $t('paragraphs.disclaimer.first') }}</p>
-          <p class="text-grey-13">
-            {{ $t('paragraphs.disclaimer.second') }}
-          </p>
-        </q-intersection>
+        <OffersList />
+        <ImportantInfo />
+        <Disclaimer />
       </div>
     </div>
     <q-dialog v-model="detailsOpened" position="bottom">
