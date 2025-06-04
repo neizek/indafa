@@ -59,7 +59,7 @@ onMounted(() => {
 
 <template>
   <div :class="`${q.screen.gt.sm ? 'sticky' : ''} Map`">
-    <div ref="mapContainer" class="map-container" style="border-radius: 10px"></div>
+    <div ref="mapContainer" class="map-container"></div>
   </div>
 </template>
 
@@ -69,12 +69,17 @@ onMounted(() => {
   top: 60px;
 }
 
-.map-container,
 .Map {
   width: 100%;
   aspect-ratio: 4/3;
-  height: 100%;
   max-height: 500px;
   overflow: hidden;
+  border-radius: 10px;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 </style>
