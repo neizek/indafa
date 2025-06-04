@@ -61,6 +61,7 @@ const $q = useQuasar()
       />
       <q-space></q-space>
       <span>© Indafa {{ new Date().getFullYear() }}</span>
+      <a class="text-secondary" href="https://teweb.eu" target="_blank">Created by SIA Teweb</a>
     </q-footer>
   </q-layout>
 </template>

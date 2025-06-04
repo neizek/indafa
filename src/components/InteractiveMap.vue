@@ -33,6 +33,7 @@ onMounted(() => {
     style: 'mapbox://styles/mapbox/navigation-night-v1',
     center: [24.198310039551963, 56.990224093655414],
     zoom: 9,
+    cooperativeGestures: true,
   })
 
   map.addControl(new mapboxgl.FullscreenControl())
@@ -72,6 +73,7 @@ onMounted(() => {
 .Map {
   width: 100%;
   aspect-ratio: 4/3;
+  height: 100%;
   max-height: 500px;
   overflow: hidden;
 }
