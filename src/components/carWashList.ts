@@ -18,6 +18,7 @@ export const getCarwashList: (t: ComposerTranslation) => CarwashList[] = (
         id: 1,
         address: 'Brīvības gatve 250A',
         spot: `${t('gs')} "Virši"`,
+        phone: '+371 20 743 743',
         coordinates: [24.173627299999996, 56.974951076362096],
       },
       // {
