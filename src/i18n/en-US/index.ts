@@ -43,5 +43,10 @@ export default {
       second:
         'Car engine washing event workers employees only for the quality of their work. The company is not responsible if the water was get in unexpected places, as well as other damage that may arise washing.',
     },
+    bannerAppRelease: {
+      header: 'New release!',
+      description:
+        'The Indafa app is here — easily book your car wash online. Choose a time, reserve your visit, and get instant confirmation. Download and book now!',
+    },
   },
 }

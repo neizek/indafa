@@ -11,6 +11,7 @@ import { computed, type Ref, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import IndafaTitleBlock from 'src/components/IndafaTitleBlock.vue'
 import OffersList from 'src/components/textblocks/OffersList.vue'
+import BannerAppRelease from 'src/components/textblocks/BannerAppRelease.vue'
 
 const carWashDetails: Ref<CarWash | undefined> = ref(undefined)
 const detailsOpened: Ref<boolean> = ref(false)
@@ -42,6 +43,7 @@ useMeta(() => {
       <div class="col-12 col-md-7 q-col-gutter-y-lg">
         <IndafaTitleBlock />
         <AboutUs />
+        <BannerAppRelease />
         <InteractiveMap :open-details="openDetails" />
       </div>
       <div class="col-12 col-md-5 q-col-gutter-y-lg">

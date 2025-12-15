@@ -44,5 +44,10 @@ export default {
       second:
         'Automašīnas dzinēja mazgāšanas gadījumā darbinieks atbild tikai par sava darba kvalitāti. Darbinieki nenes atbildību par bojājumiem, kas ir iespējami ūdenim tiekot neparedzētās mitrumam vietās, kā arī par citiem bojājumiem, kas var rasties mazgāšanas procesā.',
     },
+    bannerAppRelease: {
+      header: 'Jaunums!',
+      description:
+        'Indafa lietotne ir klāt — ērti piesaki auto mazgāšanu tiešsaistē. Izvēlies laiku, rezervē apmeklējumu un saņem apstiprinājumu uzreiz. Lejupielādē un pieraksties jau tagad!',
+    },
   },
 }
